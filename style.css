@@ -1,0 +1,270 @@
+.timestatus {
+  display: none;
+}
+
+.timeCSS {
+  padding: 20px;
+  background-color: #2e62ff;
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+   border-radius: 20px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  animation: tada;
+  animation-duration: 1s;
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#winCount{
+  display: flex;
+  justify-content: center;
+  background-color: #2e62ff;
+  height: 150px;
+  margin-top: 120px;
+  padding: 20px;
+  border-radius: 25px;
+  flex-direction: column;
+}
+
+#winText{
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+  margin-bottom: -25px;
+}
+
+.Counter{
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+  font-size: 50px;
+}
+
+.content{
+  display:flex;
+  justify-content: center;
+  gap:80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: rgba(10, 32, 247, 0.8);
+  padding: 5px;
+  border-radius: 25px;
+  width: 800px;
+  height: 500px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(10, 32, 247, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.player1 {
+  background-color: rgb(255, 0, 0);
+  border: 5px solid rgb(255, 0, 0);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50px;
+  animation: fadeInDownBig;
+  animation-duration: 1s; 
+}
+
+.player2 {
+  background-color: rgb(255, 255, 0);
+  border: 5px solid rgb(255, 255, 0);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50px;
+  animation: fadeInDownBig;
+  animation-duration: 1s; 
+}
+
+/*
+Rows - Numbers
+Columns - Letters
+*/
+
+#nav {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #2e62ff;
+  margin-bottom: 60px;
+}
+
+#Title {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family:sans-serif;
+  animation: bounceIn;
+  animation-duration: 2s; 
+}
+
+
+/* (Not sure whether to add the background image) */
+
+body {
+ background-image: url("https://img.freepik.com/free-vector/memphis-pattern_1045-810.jpg?size=338&ext=jpg");
+ background-color: white;
+}
+
+.buttonContain{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  gap: 30px;
+}
+
+ .buttonCSS{
+   padding: 20px;
+  background-color: #2e62ff;
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+   border-radius: 20px;
+ }
+
+ .greenButtonCSS{
+   padding: 20px;
+  background-color: #00ff00;
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+   border-radius: 20px;
+ }
+
+ .redButtonCSS{
+   padding: 20px;
+  background-color: #ff0000;
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+   border-radius: 20px;
+ }
+
+
+.statusCSS {
+  padding: 20px;
+  background-color: #2e62ff;
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+   border-radius: 20px;
+  width: 500px;
+  margin: auto;
+  animation: tada;
+  animation-duration: 1s;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  background-image: url("https://img.itch.zone/aW1hZ2UvNDc4NTkvMjExMjY5LmdpZg==/original/iEdCFj.gif");
+ background-size: 350px;
+  background-position-y: 25px;
+  width: 300px;
+  height: 200px;/* Could be more or less, depending on screen size */
+}
+
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  background-image: url("https://img.itch.zone/aW1hZ2UvNDc4NTkvMjExMjYyLmdpZg==/original/V5R6XE.gif");
+ background-size: 350px;
+  background-position-y: 25px;
+  width: 300px;
+  height: 200px;/* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lightBlue{
+  background-color:aliceblue;
+  color:#2e62ff;
+}
+
+.Blue{
+  background-color:#2e62ff;
+  color:white;
+}
+
