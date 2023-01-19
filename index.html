@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Connect4</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+</head>
+
+<div id="nav"> 
+<h4 id="Title">Connect4</h4>
+</div>
+
+  <h4 id="timedMode" class = "timestatus"></h4>
+
+<section class = "content">
+  <div id="winCount">
+    <h4 id="winText">Player 1 Wins</h4>
+     <h4 class = "Counter" id="winCount1">0</h4>
+  </div>
+<div class = "grid-container" id = "connect4-board">
+  <div class="grid-item" id = "A1" onclick="turnA()"> </div>
+  <div class="grid-item" id = "B1" onclick="turnB()"> </div>
+  <div class="grid-item" id = "C1" onclick="turnC()"> </div>
+  <div class="grid-item" id = "D1" onclick="turnD()"> </div>
+  <div class="grid-item" id = "E1" onclick="turnE()"> </div>
+  <div class="grid-item" id = "F1" onclick="turnF()"> </div>
+  <div class="grid-item" id = "G1" onclick="turnG()"> </div>
+  <div class="grid-item" id = "A2" onclick="turnA()"> </div>
+  <div class="grid-item" id = "B2" onclick="turnB()"> </div>
+  <div class="grid-item" id = "C2" onclick="turnC()"> </div>
+  <div class="grid-item" id = "D2" onclick="turnD()"> </div>
+  <div class="grid-item" id = "E2" onclick="turnE()"> </div>
+  <div class="grid-item" id = "F2" onclick="turnF()"> </div>
+  <div class="grid-item" id = "G2" onclick="turnG()"> </div>
+  <div class="grid-item" id = "A3" onclick="turnA()"> </div>
+  <div class="grid-item" id = "B3" onclick="turnB()"> </div>
+  <div class="grid-item" id = "C3" onclick="turnC()"> </div>
+  <div class="grid-item" id = "D3" onclick="turnD()"> </div>
+  <div class="grid-item" id = "E3" onclick="turnE()"> </div>
+  <div class="grid-item" id = "F3" onclick="turnF()"> </div>
+  <div class="grid-item" id = "G3" onclick="turnG()"> </div>
+  <div class="grid-item" id = "A4" onclick="turnA()"> </div>
+  <div class="grid-item" id = "B4" onclick="turnB()"> </div>
+  <div class="grid-item" id = "C4" onclick="turnC()"> </div>
+  <div class="grid-item" id = "D4" onclick="turnD()"> </div>
+  <div class="grid-item" id = "E4" onclick="turnE()"> </div>
+  <div class="grid-item" id = "F4" onclick="turnF()"> </div>
+  <div class="grid-item" id = "G4" onclick="turnG()"> </div>
+  <div class="grid-item" id = "A5" onclick="turnA()"> </div>
+  <div class="grid-item" id = "B5" onclick="turnB()"> </div>
+  <div class="grid-item" id = "C5" onclick="turnC()"> </div>
+  <div class="grid-item" id = "D5" onclick="turnD()"> </div>
+  <div class="grid-item" id = "E5" onclick="turnE()"> </div>
+  <div class="grid-item" id = "F5" onclick="turnF()"> </div>
+  <div class="grid-item" id = "G5" onclick="turnG()"> </div>
+  <div class="grid-item" id = "A6" onclick="turnA()"> </div>
+  <div class="grid-item" id = "B6" onclick="turnB()"> </div>
+  <div class="grid-item" id = "C6" onclick="turnC()"> </div>
+  <div class="grid-item" id = "D6" onclick="turnD()"> </div>
+  <div class="grid-item" id = "E6" onclick="turnE()"> </div>
+  <div class="grid-item" id = "F6" onclick="turnF()"> </div>
+  <div class="grid-item" id = "G6" onclick="turnG()"> </div>
+</div>
+  <div id="winCount">
+    <h4 id="winText">Player 2 Wins</h4>
+    <h4 id="winCount2" class = "Counter">0</h4>
+  </div>
+</section>
+
+  <div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+  </div>
+</div>
+
+  <div id="myModal2" class="modal2">
+  <!-- Modal content -->
+<div class="modal-content2">
+    <span class="close2">&times;</span>
+  </div>
+</div>
+  
+<body>
+<div class = "buttonContain">
+<button id = "resetBoard" onclick="resetBoard()" class = "buttonCSS">Reset Board</button>
+<button id = "resetWin" onclick="resetWin()" class = "buttonCSS">Reset Win Count</button>
+<button id = "AIMode" class = "redButtonCSS" onclick="aiMode()">Single Player Mode</button>
+<button id = "timeMode" class = "redButtonCSS" onclick="timeMode()">Timed Mode</button>
+</div>
+
+<h4 id="turnStatus" class = "statusCSS"> Player 1's turn </h4>
+
+  
+  <script src="script.js"></script> 
+</body>
+</html>
